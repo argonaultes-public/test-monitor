@@ -9,7 +9,7 @@ REQUEST_TIME = Summary('request_processing_seconds', 'Time spent processing requ
 @REQUEST_TIME.time()
 def process_request(t):
     """A dummy function that takes some time."""
-    time.sleep(t * 2)
+    time.sleep(t * 2 * 100)
 
 if __name__ == '__main__':
     # Start up the server to expose the metrics.
